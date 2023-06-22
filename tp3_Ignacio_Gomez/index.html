@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="MySketch web whiteboard">
+    <meta name="description" content=" MySketch is an interactive online tool that allows you to draw and write digitally. It's perfect for taking notes, sketching, explaining ideas, or simply unleashing your creativity. With a wide range of colors, brush sizes, and eraser options, you can customize your creations and express yourself freely.">
+    <meta name="keywords" content="Web whiteboard, Online whiteboard, Digital drawing tool, Interactive sketching platform, Collaborative whiteboard, Virtual canvas">
+    <meta name="language" content="
+    English">
+    <meta name="author" content="Ignacio Gómez para sitio web de Fitness.">
+    <title>MySketch</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <script  src="js/draw.js" defer></script>
+	<script  src="js/events.js" defer></script>
+</head>
+<body>
+    <header class="fondo">
+        <img src="img/logo/logo.png" alt="logo de MySketch">
+    </header>
+    <nav id="barraOrizontal" class="fondo">
+
+
+            <div  id="botoneO">
+                <button  class="botones border" id="Mylapiz"><img src="img/icons/brush.png" alt="pincel"></button>
+	            <button class="botones border" id="borrador"><img src="img/icons/Erase.png" alt="borrador"></button>
+                <button class="botones border" id = "limpiarPizarra"><img src="img/icons/Delete.png" alt="Borrar"></button>
+                <button class="botones border" id="imagen"><img src="img/icons/ImageFile.png" alt="imagen"></button>
+                <button class="botones border" id="guardar"><img src="img/icons/DownloadsFolder.png" alt="guardar"></button>
+            </div>
+            <div id="stylesBrush">
+                <label for="grosor">Brush zise</label> 
+                <input type="range" id="grosor" name="grosor" min="1" max="50" value="5">
+                <div id="BrushF">
+                    <h3>Brush style:</h3>
+                    <label for="round" id="circulo" class="medidas"  aria-label="round"></label>
+                    <input type="radio" id="round" name="forma" value="round"  checked class="formaB">
+                    <label for="square" id="cuadrado" class="medidas"  aria-label="square"></label>
+                    <input type="radio" id="square" name="forma" value="square" class="formaB">
+                </div>
+                <div id="BrushsE">
+                    <label for="arcoiris">Rainbow mode</label>
+                    <input type="checkbox" id="arcoiris" name="arcoiris">
+                    <label for="espejo">Mirror mode</label>
+                    <input type="checkbox" id="espejo" name="espejo">
+                </div>
+            </div>
+              <div class="colors">
+            <h3>Color</h3>
+                <button id="white" class="blanco tamaño" aria-label="white"></button>
+                <button id="black" class="negro tamaño" aria-label="black"></button>
+                <button id="blue" class="azul tamaño" aria-label="blue"></button>
+                <button id="red" class="rojo tamaño" aria-label="red"></button>
+                <button id="green" class="verde tamaño" aria-label="green"></button>
+                <button id="yellow" class="amarillo tamaño" aria-label="yellow"></button>
+            <label for="color"  aria-label="color"></label>
+	        <input id="color" type="color" name="color">
+        </div>
+            
+    </nav>
+    <section id="contenedorCanva">
+        <canvas id="micanva" width="1000" height="600">
+        Tu navegador no soporta canvas HTML5
+       </canvas>
+    </section>
+</body>
+</html>
