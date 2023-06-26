@@ -1,0 +1,255 @@
+
+html, body {
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+  font-family: 'Lato', sans-serif;
+  background-color: #CBCBCB;
+}
+
+.fondo {
+    background-color: white;
+}
+
+.border{
+    border-radius: 10px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5em;
+    border-bottom: 1px solid gray
+}
+
+header img{
+    width: 5em;
+}
+
+
+#barraOrizontal{
+    padding: 1em;
+    border-bottom: 1px solid gray
+}
+
+#barraOrizontal #menu,  #menuL {
+    display: none;
+    
+}
+
+
+ .menuHan{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+
+
+.fa-bars{
+    color: black;
+}
+
+.botones{
+    background-color: black;
+    border: none;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+.botones:hover{
+    transform: scale(1.1);
+    padding-top: 0.5em;
+}
+#barraOrizontal .botones{
+    margin-left: 1em;
+}
+
+.botones img{
+    width: 1.8em;
+    padding: 0.2em;
+}
+
+#stylesBrush{
+    display: flex;
+    align-items: center;
+}
+
+#stylesBrush input{
+    margin-left: 0.2em;
+}
+
+#BrushF{
+    margin-left: 2em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#BrushF label ,#BrushsE label{
+    margin-left: 1em;
+}
+
+.medidas{
+    width: 1em;
+    height: 1em;
+    background-color: black;
+}
+#circulo{
+    border-radius: 100%;
+}
+
+#BrushsE{
+    margin-left: 2em;
+}
+
+#contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 12%;
+    padding: 1em;
+    
+
+}
+aside button, aside label {
+    margin-top: 1em;
+}
+
+#micanva{
+    margin: 1em 5em 1em 0;
+    background: white;
+
+}
+
+.colors{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+   justify-items: center;
+}
+.colors h3{
+    grid-column: 1/4;
+ text-align: center;
+ position: relative;
+    top: 1em;
+    
+}
+.colors input{
+    margin-top: 1em;
+}
+
+.tamaño{
+    width: 2em;
+    height: 2em;
+    cursor: pointer;
+    border: none;
+    display: block;
+
+}
+
+.blanco{
+    grid-column: 1/2;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.negro{
+    background-color: black;
+}
+.azul{
+    background-color: blue;
+}
+.rojo{
+    background-color: red;
+}
+.verde{
+    background-color: #00ff00;
+}
+.amarillo{
+    background-color: yellow;
+}
+
+@media (max-width: 768px ){
+    #barraOrizontal{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #barraOrizontal #menu,  .menuHan {
+        display: none;
+    }
+    
+    #barraOrizontal input:checked ~ .menuHan {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+     
+    #barraOrizontal   #menuL {
+        display: block;
+        
+    }
+    
+    .fa-bars{
+        color: black;
+    }
+
+    #stylesBrush{
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 1em;
+    }
+
+    #BrushsE{
+        margin-left: 0;
+    }
+
+    
+
+    #barraOrizontal .botones{
+        margin-top: 1em;
+    }
+
+    #contenedor{
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    aside{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        width: 100%;
+        justify-items: center;
+        margin: 1em;
+        padding: 0.4em 0;
+    
+    
+    }
+
+    .colors{
+        grid-column: 3/5;
+        display: flex;
+        align-items: center;
+    }
+
+    .colors h3{
+       top: 0.5em;
+       right: 0.3em;
+    
+    }
+
+    .tamaño{
+        display: none;
+    }
+   
+    
+}
