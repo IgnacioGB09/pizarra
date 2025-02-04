@@ -7,7 +7,7 @@ html, body {
 }
 
 .fondo {
-    background-color: white;
+    background-color: rgb(32, 32, 32);
 }
 
 .border{
@@ -19,7 +19,7 @@ header{
     align-items: center;
     justify-content: center;
     padding: 0.5em;
-    border-bottom: 1px solid gray
+    border-bottom: 1px solid rgb(0, 0, 0)
 }
 
 header img{
@@ -29,7 +29,7 @@ header img{
 
 #barraOrizontal{
     padding: 1em;
-    border-bottom: 1px solid gray
+    border-bottom: 1px solid rgb(23, 23, 23)
 }
 
 #barraOrizontal #menu,  #menuL {
@@ -44,16 +44,28 @@ header img{
     justify-content: space-between;
  }
 
-
+h3, p, label{
+    color: white;
+}
 .fa-bars{
     color: black;
 }
 
 .botones{
-    background-color: black;
-    border: none;
+
+    border: 2px solid #7c7c7c;
+    background-color: transparent;
     transition: all .2s ease-in-out;
     cursor: pointer;
+    width: 95%;
+    padding: 0 1em;
+    font-size: 1rem; 
+    display: flex;
+    color: white;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 0 1em;
+    justify-content: start;
 }
 .botones:hover{
     transform: scale(1.1);
@@ -83,16 +95,18 @@ header img{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    gap: 0 1em;
 }
 
-#BrushF label ,#BrushsE label{
-    margin-left: 1em;
+select{
+    background-color: rgb(32, 32, 32);
+    color: white;
 }
 
 .medidas{
     width: 1em;
     height: 1em;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
 }
 #circulo{
     border-radius: 100%;
@@ -189,9 +203,9 @@ aside button, aside label {
     
     #barraOrizontal input:checked ~ .menuHan {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
-        justify-content: center;
+        justify-content: space-around;
     }
      
     #barraOrizontal   #menuL {
@@ -225,8 +239,6 @@ aside button, aside label {
     }
 
     aside{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
         width: 100%;
         justify-items: center;
         margin: 1em;
@@ -251,5 +263,7 @@ aside button, aside label {
         display: none;
     }
    
-    
+    .botones{
+        font-size: 2rem;
+    }
 }
