@@ -25,11 +25,6 @@
             <input type="checkbox" id="menu">
             <label for="menu" id="menuL"><i class="fa fa-bars" style="font-size: 2rem;"></i></label>
             <nav class="menuHan" aria-expanded="false">
-            <div  id="botoneO">
-                <button class="botones border" id = "limpiarPizarra"><img src="img/icons/Delete.png" alt="Borrar"></button>
-                <button class="botones border" id="imagen"><img src="img/icons/ImageFile.png" alt="imagen"></button>
-                <button class="botones border" id="guardar"><img src="img/icons/DownloadsFolder.png" alt="guardar"></button>
-            </div>
             <div id="stylesBrush">
                 <label for="grosor">Brush zise</label> 
                 <input type="range" id="grosor" name="grosor" min="1" max="50" value="5">
@@ -51,8 +46,11 @@
     </nav>
     <section id="contenedor">
     <aside class="fondo">
-        <button  class="botones border" id="Mylapiz"><img src="img/icons/brush.png" alt="pincel"></button>
-	    <button class="botones border" id="borrador"><img src="img/icons/Erase.png" alt="borrador"></button>
+        <button  class="botones border" id="Mylapiz">Brush<img src="img/icons/brush.png" alt="pincel"></button>
+	    <button class="botones border" id="borrador">Eraser<img src="img/icons/Erase.png" alt="borrador"></button>
+        <button class="botones border" id = "limpiarPizarra">Delete<img src="img/icons/Delete.png" alt="Borrar"></button>
+        <button class="botones border" id="imagen">upload image<img src="img/icons/ImageFile.png" alt="imagen"></button>
+        <button class="botones border" id="guardar">Download canva<img src="img/icons/DownloadsFolder.png" alt="guardar"></button>
         <div class="colors">
             <h3>Color</h3>
                 <button id="white" class="blanco tamaño" aria-label="white"></button>
